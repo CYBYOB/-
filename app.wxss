@@ -1,0 +1,44 @@
+/**app.wxss**/
+
+/* 主题内容，版心 */
+.main-content {
+  margin: 0 25rpx;
+}
+/* 边框样式 */
+.border-all {
+  border: 3rpx solid #E4E4E4; 
+}
+.border-top {
+  border-top: 3rpx solid #E4E4E4;
+}
+.border-bottom {
+  border-bottom: 3rpx solid #E4E4E4;
+}
+
+
+/* 自定义的按钮样式，全局通用，提高代码复用率 */
+.my-button {
+  /* width: 500rpx; */
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 150rpx;
+  border-radius: 50rpx;
+  font-size:36rpx;
+  color: #F9FEF9;
+  background-color:#31AE61;
+}
+.my-btn-tag {
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0 40rpx;
+  border: 3rpx solid #E4E4E4;
+  border-radius: 40rpx; 
+  /* 未选中和选中的2个颜色不一样 */
+  color: #333333;
+  background-color:#fff;  
+}
+/* 辅助性的文字，字小颜色淡 */
+.mini-text {
+  font-size: 32rpx;
+  color: #666;
+}

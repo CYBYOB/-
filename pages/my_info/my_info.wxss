@@ -1,0 +1,43 @@
+/* pages/my_info/my_info.wxss */
+
+/* 当前页面公共样式 */
+.nick-name, .role-list, .tag-list {
+  margin: 30rpx 0 50rpx 0;
+}
+
+/* 角色选择 role, 个性化标签 */
+.role-list, .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.role-item, .tag-item {
+  margin: 0 10rpx 20rpx 0;
+}
+
+/* 顶部的三个进度图标 */
+.process-list {
+  display: flex;
+  justify-content: space-between;
+}
+.process-item {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 100rpx;
+  color: #FFBA4F;
+  border: 3rpx solid #FFBA4F;
+  border-radius: 50rpx;
+}
+
+.next {
+  width: 700rpx;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 100rpx;
+}
+/* 点不点击样式是不一样的 */
+.my-button {
+  
+}

@@ -1,0 +1,53 @@
+/* pages/add_family/add_family.wxss */
+
+/* 页面公共样式 */
+.add-text, .tip-text {
+  color: #fff;
+}
+
+/* 整个页面的样式 */
+.page {
+  height: 1205rpx;
+  background-color: #5D816B;
+} 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100rpx;
+}
+.content .top {
+  position: relative;
+  margin-top: 50rpx;
+}
+.top .bg {
+  width: 600rpx;
+  height: 750rpx;
+  border-radius: 50rpx;
+}
+.top .add {
+  position: absolute;
+  bottom: -60rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+}
+
+/* 底部文案 */
+.add-text {
+  margin: 60rpx 0 20rpx;
+}
+.tip-text {
+  font-size: 22rpx;
+}
+/* 底部跳过或完成按钮 */
+.my-button {
+  position: fixed;
+  bottom: 100rpx;
+  background-color: #5D816B;
+  border: 3rpx solid #fff;
+}

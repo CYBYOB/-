@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view>
+  <view class="main-content">
+    <!-- 顶部定位和搜索框 -->
+    <view class="top">
+      <view class="location">
+        <image class="location-icon"  src="/images/common/location.png"></image>
+        <view class="location-text">日本</view>
+      </view>
+      <view class="search">
+        <icon type="search" size="40rpx"></icon>
+        <text> | 地点 景点名字</text>
+      </view>
+    </view>
+
+    <!-- 轮播图 -->
+    <view class="carousel">
+      <swiper class="carousel-list" indicator-dots="true"   autoplay="true" interval="1500" duration="1500"   circular="true">
+        <block wx:for="{{carousel_list}}" wx:key="key">
+          <swiper-item>
+            <image class="carousel-item" id="{{item.id}}"   src="{{item.src}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <!-- 选择目的地与筛选 -->
+    <view class="choose">
+      <view class="destination">
+        <view class="line">------------</view>
+        <view class="mini-text">请选择目的地</view>
+        <view class="line">------------</view>
+      </view>
+    </view>
+
+    <!-- 需要抽象成一个组件，后面统一写 -->
+    <view class="filter">
+      需要抽象成一个组件，后面统一写
+    </view>
+  </view>
+</view>
