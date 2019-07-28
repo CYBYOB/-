@@ -1,0 +1,35 @@
+<!--pages/my_info/my_info.wxml-->
+<view class="main-content">
+  <view class="process-list">
+    <block wx:for='{{[0,1,2]}}'>
+      <!-- <view class="process-item">{{item}}</view> -->
+      <view class="process-item">·</view>
+    </block>
+  </view>
+
+  <view class="nick-name">
+    昵称 <text class="border-bottom">陈yob(测试数据)</text>
+  </view>
+
+  <view class="role">
+      我是
+      <view class="role-list">
+        <block wx:for="{{['爸爸','妈妈','女儿','儿子']}}">
+          <view class="role-item my-btn-tag">{{item}}</view>
+        </block>
+      </view>
+  </view>
+
+  <view class="personal-tag">
+    个性标签
+    <view class="tag-list">
+      <block wx:for="{{['标签1','标签11','标签111','标签11111111','标签111','标签11111111']}}">
+        <view class="tag-item my-btn-tag">{{item}}</view>
+      </block>
+    </view>
+
+    <view class="next">
+      <view class="my-button">></view>
+    </view>
+  </view>
+</view>

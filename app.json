@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/add_family/add_family",
+    "pages/index/index",
+    "pages/authorization/authorization",
+    "pages/my_info/my_info",
+    "pages/trip/trip",
+    "pages/discovery/discovery",
+    "pages/me/me",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "同游",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

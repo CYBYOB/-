@@ -1,0 +1,15 @@
+/* pages/authorization/authorization.wxss */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 150rpx 0 60rpx 0;
+}
+.authorization-text {
+  padding: 60rpx 0;
+}

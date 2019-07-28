@@ -1,0 +1,14 @@
+<!--pages/add_family/add_family.wxml-->
+<view class="page">
+  <view class="content">
+    <view class="top">
+      <image class="bg" src="/images/common/add_family_bg.png"></image>
+      <image class="add" src="/images/common/add_family.png"></image>
+    </view>
+
+    <!-- 底部文案 -->
+    <view class="add-text">邀请家庭成员</view>
+    <view class="tip-text">创造共同的美好会回忆</view>
+    <view class="my-button">></view>
+  </view>
+</view>
