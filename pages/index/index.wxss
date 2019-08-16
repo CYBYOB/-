@@ -1,5 +1,14 @@
 /**index.wxss**/
 
+/* 页面公共样式 */
+/* 当前某个大小区的具体值被点击选中 */
+.area-active {
+  border-bottom: 3rpx solid #31AE61;
+  color: #31AE61;
+}
+
+
+
 .top {
   height: 50rpx;
   display: flex;
@@ -23,13 +32,13 @@
   flex: 1;
   margin-left: 30rpx;
   border-radius: 20rpx;
-  color: #ccc;
-  background-color: #999;
+  color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(51, 51, 51, 0.05);
 }
 
 /* 轮播图 */
 .carousel-list {
-  height: 400rpx;
+  height: 448rpx;
 }
 .carousel-item {
   width: 100%;
@@ -40,11 +49,95 @@
   height: 50rpx;
   display: flex;
   justify-content: space-between;
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 24rpx;
   align-self: center;
   margin: 20rpx 0;
+  color: #666666;
 }
 
 /* 横纵向的筛选 */
 .filter {
   text-align: center;
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 28rpx;
+  color: rgba(71, 71, 71, 0.6)
+}
+
+.filter > scroll-view {
+  white-space: nowrap;
+  border: 3rpx solid #e4e4e4;
+  border-right: none;
+}
+.big-area-item {
+  display: inline-block;
+  padding: 10rpx 46rpx;
+  border-right: 3rpx solid #e4e4e4;
+}
+.big-area-item-active {
+  display: inline-block;
+  padding: 10rpx 46rpx;
+  border-right: 3rpx solid #e4e4e4;
+  background-color: #31AE61;
+}
+
+/* filter的底部 */
+.filter > .bottom {
+  display: flex;
+}
+.bottom > scroll-view {
+  width: 150rpx;
+  height: 500rpx;
+  white-space: nowrap;
+  border: 3rpx solid #e4e4e4;
+  border-bottom: none;
+  margin-top: 17rpx;
+}
+.mini-area-item {
+  padding: 10rpx 0;
+  border-bottom: 3rpx solid #e4e4e4;
+}
+.mini-area-item-active {
+  padding: 10rpx 0;
+  border-bottom: 3rpx solid #e4e4e4;
+  background-color: #31AE61;
+}
+
+/* 筛选结果列表 */
+.result {
+
+}
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.result-list :nth-child(2n+1) {
+  margin: 20rpx;
+}
+.result-item {
+  width: 255rpx;
+  height: 255rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-family: PingFangSC-Regular, sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.name {
+  font-size: 30rpx;
+  margin: 30rpx 0 20rpx;
+}
+.rate {
+  font-size: 24rpx;
+}
+.visit-time {
+  font-size: 20rpx;
+  margin: 10rpx 0 15rpx;
+}
+.result-item > image {
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+  overflow: visible;
+  margin-left: 88rpx;
 }

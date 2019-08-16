@@ -1,0 +1,55 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class="top">
+    <image src="{{scenery.src}}"></image>
+  </view>
+
+  <!-- 主体内容 -->
+  <view class="main-content">
+    <view class="name-nums">
+      <view class="title-nums">
+        <text class="name">{{scenery.name}}</text>
+        <view class="right">
+          <!-- like ??! 暂时不入库 ！！ -->
+          <view class="like" bindtap="onClickLike">
+            <image src="{{ like_collect.like? '/images/common/like_selected.png': '/images/common/like.png'}}"></image>
+            {{scenery.like_num}}
+          </view>
+          <view class="collect">
+            <image src="{{ like_collect.collect? '/images/common/collect_selected.png': '/images/common/collect.png'}}" bindtap="onClickCollect"></image>{{scenery.collect_num}}
+          </view>
+        </view>
+      </view>
+      <view class="visit-time">建议游玩时长{{scenery.visit_time}}小时</view>
+    </view>
+
+    <!-- 价格、评分等数据 -->
+    <view class="many-data">
+      <view class="left-three">
+        <view class="price">
+          <image src="/images/common/price.png"></image>人均{{scenery.price}}
+        </view>
+        <view class="open-time">
+          <image src="/images/common/open_time.png"></image><text>{{scenery.open_time}}</text>
+        </view>
+        <view class="location">
+          <image src="/images/common/location.png"></image>{{scenery.location}}
+        </view>
+      </view>
+      <view class="right-score">
+        <view class="score"><text>评分：</text><text>{{scenery.score}}</text><text>/5</text></view>
+      </view>
+    </view>
+
+    <!-- 天气 -->
+    <view class="weather">天气视（时间)情况添加</view>
+
+    <!-- 景点介绍 -->
+    <view class="desc-detail">
+      <text>{{scenery.desc_detail}}</text>
+    </view>
+
+    <!-- 底部“添加行程” -->
+    <view class="my-button-active">+添加至行程</view>
+  </view>
+</view>

@@ -4,10 +4,12 @@
     <image class="logo" src="/images/common/LOGO.png"></image>
     <view class="authorization-content border-top">
       <view class="authorization-text">
-        <view>登录后同游小程序将获得以下权限</view>
-        <view class="mini-text">·获得您的公开信息(昵称、头像等)</view>
+        <view class="top-text">登录后同游小程序将获得以下权限</view>
+        <view class="bottom-text">·获得您的公开信息(昵称、头像等)</view>
       </view>
-      <button class="my-button">确认登录</button>
+      <button class='my-button-active' wx:if='{{canIUse}}' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>确认登录</button>
+    <!-- 版本太低，无法进行正常的授权 -->
+    <view wx:else>请升级微信版本</view>
     </view>
   </view>
   

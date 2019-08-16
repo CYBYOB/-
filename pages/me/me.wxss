@@ -1,1 +1,310 @@
 /* pages/me/me.wxss */
+
+/* .page {
+  position: relative;
+} */
+.page .more-icon {
+  position: fixed;
+  top: 0;
+  right: 20rpx;
+}
+.more {
+  position: relative;
+}
+.more .outside {
+  position: fixed;
+  right: 5rpx;
+}
+.about-feedback {
+  position: relative;
+}
+/* 关于 和 反馈 的顶部小三角 */
+.about-feedback .top-triangle {
+  position: absolute;
+  right: 40rpx;
+  top: 60rpx;
+  width: 0;
+  height: 0;
+  border-left: 20rpx solid transparent;
+  border-right: 20rpx solid transparent;
+  border-bottom: 20rpx solid #fff;
+}
+.page .about-feedback-list {
+  position: absolute;
+  top: 78rpx;
+  right: 20rpx;
+  width: 250rpx;
+  height: 200rpx;
+  border-radius: 25rpx;
+  background-color: #fff;
+}
+.about-feedback-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+}
+.about-feedback-item:first-child {
+  border-bottom: 3rpx #e4e4e4 solid;
+}
+.about-feedback-item .icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+/* 更多的按钮 */
+.more > image {
+  width: 45rpx;
+  height: 45rpx;
+  margin: 15rpx 0 0 690rpx;
+}
+
+/* 我的基本信息 */
+.my-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70rpx;
+}
+.my-info > image {
+  width: 170rpx;
+  height: 176rpx;
+  border-radius: 176rpx;
+}
+.my-info .nick-name {
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 48rpx;
+  margin: 15rpx 0 5rpx;
+  color: #fff;
+}
+.my-info .fan-num {
+  font-family: PingFangSC-Light, sans-serif;
+  font-size: 24rpx;
+  color: #e4e4e4;
+}
+
+/* 底部东西 */
+.bottom {
+  width: 670rpx;
+  margin: 25rpx auto 20rpx;
+}
+.bottom .tab-three-list {
+  width: 670rpx;
+  display: flex;
+  padding: 0 auto 20rpx;
+}
+.tab-three-item {
+  flex: 1;
+  text-align: center;
+  color: #999;
+}
+.tab-three-item-active {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+/* 足迹 */
+.foot_print > image {
+  width: 680rpx;
+  height: 680rpx;
+  padding: 0 35rpx;
+  border-radius: 100rpx 100rpx 0 0;
+}
+/* 关注 */
+.concern {
+  width: 680rpx;
+  padding: 0 35rpx;
+  border-radius: 50rpx 50rpx 0 0;
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #5D816B;
+}
+.concern .outside {
+  padding: 25rpx;
+}
+.family {
+  margin-bottom: 20rpx;
+}
+.family-list {
+  display: flex;
+  padding-top: 20rpx;
+}
+.family-item > image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 25rpx;
+  margin-right: 50rpx;
+  background-color: #5D816B;
+}
+.family-item .add-icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-image: url('http://www.520cyb.cn/mini/tongyou/add_icon.png');
+  background-size:100% 100%;
+}
+
+
+/* 关注的列表 */
+.concern-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  font-weight: lighter;
+  border-bottom: 2rpx #aaa solid;
+}
+.concern-item > image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 25rpx;
+  margin-right: 50rpx;
+}
+.concern-item .concern-btn {
+  margin-left: auto;
+}
+
+
+.calendar-box {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, #6295eb 0%, #586fc2 50%, #5052a4 100%);
+    box-shadow: 0px 11px 2px 1px rgba(234, 234, 229, 0.3);
+}
+
+.calendar-box .left {
+    width: 30%;
+    text-align: center;
+}
+
+.calendar-box .left .today {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;    
+    background-color: #ef7a82;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.calendar-box .left .today p {
+    font-size: 2rem;    
+}
+
+.calendar-box .left .today .monthStr {
+    font-size: 0.8rem;
+}
+
+.calendar-box .right {
+    width: 70%;
+    font-size: 12px;
+}
+
+.calendar-box .right .box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .title {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+} */
+
+.demo2 {
+    background-image: linear-gradient(to bottom, #2e5d91 0%, #2f3e79 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+.demo2-header {
+    font-size: large;
+    color: #3ed7f6;
+}
+
+
+.demo2-board {
+    color: #3ed7f6;
+}
+
+
+.demo3 {
+    background-color: #eeedff;
+    padding-top: 10px;
+}
+
+.demo3-header {
+    font-size: large;
+    color: #605eac;
+}
+
+
+.demo3-board {
+    background-color: #dddcff;
+    color: white;
+}
+
+
+.demo4-calendar {
+    background-color: #413a60;
+    padding-top: 10px;
+}
+
+.demo4-header {
+    font-size: large;
+    color: white;
+}
+
+.demo4-board {
+    color: white;
+}
+
+.demo5 {
+    padding: 15px;
+}
+
+.demo5-calendar {
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.demo5-header {
+    font-size: large;
+    color: #59518d;    
+}
+
+.demo5-board {
+    color: #c7cbe2;
+    font-weight: bold;
+}
+
+.demo6 {
+    padding: 15px;
+}
+
+.demo6-calendar {
+    background-color: #fff043;
+    padding-top: 10px;    
+    box-shadow: 5px 5px 2px 1px rgba(255, 240, 67, 0.5);
+}
+
+.demo6-header {
+    font-size: large;
+    color: black;    
+}
+
+.demo6-board {
+    color: #ff8a43;
+    font-weight: bold;
+}

@@ -1,19 +1,68 @@
 {
   "pages": [
-    "pages/add_family/add_family",
-    "pages/index/index",
-    "pages/authorization/authorization",
-    "pages/my_info/my_info",
-    "pages/trip/trip",
-    "pages/discovery/discovery",
     "pages/me/me",
+    "pages/check/check",
+    "pages/authorization/authorization",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/search_result/search_result",
+    "pages/add_family/add_family",
+    "pages/my_info/my_info",
+    "pages/discovery/discovery",
+
+    
+    "pages/confirm_trip/confirm_trip",
+    "pages/about/about",
+    "pages/feedback/feedback",
+
+
+    
+
+    "pages/trip/trip",
     "pages/logs/logs"
   ],
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#31AE61",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/common/index.png",
+        "selectedIconPath": "/images/common/index_selected.png"
+      },
+      {
+        "pagePath": "pages/trip/trip",
+        "text": "行程",
+        "iconPath": "/images/common/trip.png",
+        "selectedIconPath": "/images/common/trip_selected.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "发现",
+        "iconPath": "/images/common/discovery.png",
+        "selectedIconPath": "/images/common/discovery_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/common/me.png",
+        "selectedIconPath": "/images/common/me_selected.png"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "同游",
     "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
   },
   "sitemapLocation": "sitemap.json"
 }

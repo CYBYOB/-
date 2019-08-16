@@ -1,0 +1,23 @@
+<!--pages/feedback/feedback.wxml-->
+<view>
+  <view class="feedback">
+    <view class="inside">
+      <view class="top">
+        <input placeholder="请输入您的反馈意见"></input>
+      </view>
+      <view class="bottom">
+        <image src="/images/feedback/add_pic.png"></image>
+        <input placeholder="添加图片说明"></input>
+      </view>
+    </view>
+  </view>
+
+  <!-- 电话 -->
+  <view class="phone">
+    <text>电话</text>
+    <input placeholder="选填 以便将反馈结果告知您"></input>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="my-button">提交</view>
+</view>

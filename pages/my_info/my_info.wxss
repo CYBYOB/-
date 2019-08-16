@@ -14,30 +14,56 @@
   margin: 0 10rpx 20rpx 0;
 }
 
+.page {
+  height: 1205rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5D816B;
+}
+.outside-content {
+  width: 688rpx;
+  height: 1116rpx;
+  background-color: #FFFFFF;
+  border-radius: 30rpx;
+}
+.inside-content {
+  padding: 30rpx 50rpx 0;
+}
 /* 顶部的三个进度图标 */
 .process-list {
   display: flex;
   justify-content: space-between;
+  
 }
 .process-item {
   width: 50rpx;
   height: 50rpx;
   line-height: 50rpx;
   text-align: center;
-  font-size: 100rpx;
+  font-size: 80rpx;
+  color: rgba(51, 51, 51, 0.5);
+  border-radius: 50rpx;
+}
+/* 活跃态 */
+.process-item-active {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 80rpx;
   color: #FFBA4F;
   border: 3rpx solid #FFBA4F;
   border-radius: 50rpx;
 }
 
-.next {
-  width: 700rpx;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 100rpx;
-}
 /* 点不点击样式是不一样的 */
-.my-button {
-  
+.next {
+  position: fixed;
+  bottom: 108rpx;
+}
+.next > image {
+  width: 210rpx;
+  height: 96rpx;
+  padding-left: 190rpx;
 }

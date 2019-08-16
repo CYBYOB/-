@@ -1,0 +1,73 @@
+/* pages/about/abouts.wxss */
+
+/* 页面公共样式 */
+.definition, .main-function, .team {
+  margin-bottom: 30rpx;
+}
+.big-text {
+  font-size: 36rpx;
+  margin-bottom: 15rpx;
+}
+.mini-text {
+  font-size: 26rpx;
+}
+
+/* 顶部 */
+.top {
+  position: fixed;
+  top: 0;
+  left: 27rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+.top > .proc-intr {
+  font-size: 48rpx;
+  color: #707070;
+  margin: 30rpx 0 20rpx;
+}
+.top > image {
+  width: 690rpx;
+  height: 512rpx;
+  border-radius: 20rpx;
+  border: 3rpx solid #707070;
+  box-shadow: 5rpx 5rpx 5rpx #707070;
+}
+
+/* 底部 */
+.bottom {
+  width: 100%;
+  height: 850rpx;
+  position: fixed;
+  bottom: 0;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #5D816B;
+}
+.info {
+  padding: 320rpx 80rpx;
+  color: #fff;
+}
+
+/* 核心功能 */
+.func-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.func-item {
+  display: flex;
+  align-items: center;
+}
+.func-item > image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+
+}
+
+/* 成员介绍 */
+.team-item > text:first-of-type {
+  margin-right: 20rpx;
+}

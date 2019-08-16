@@ -12,4 +12,15 @@
 }
 .authorization-text {
   padding: 60rpx 0;
+  color: #333;
+}
+.top-text {
+  font-size: 40rpx;
+}
+.bottom-text {
+  color: #999;
+}
+.my-botton {
+  border: 3rpx solid #31AE61;
+  background-color: #19AD17;
 }

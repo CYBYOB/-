@@ -1,0 +1,93 @@
+/* pages/detail/detail.wxss */
+
+/* 页面公共样式 */
+
+.right .like, .collect {
+  display: inline-block;
+}
+
+.right, .visit-time {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, sans-serif;
+  color: #424242;
+}
+
+
+.top > image {
+  width: 100%;
+  height: 422rpx;
+}
+
+/* 主体内容 */
+.name-nums {
+  margin: 20rpx 0 30rpx;
+}
+.title-nums {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  font-size: 48rpx;
+  color: #333;
+}
+.right image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 5rpx 0 15rpx;
+  color: #666;
+}
+
+/* 很多数据项，主体 */
+.many-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-three image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.left-three > .open-time {
+  margin: 15rpx 0;
+}
+/* 评分 */
+.score {
+  font-size: 36rpx;
+  font-family: PingFangSC-Heavy, sans-serif;
+  color: #707070;
+}
+.score > text:nth-of-type(2) {
+  font-size: 48rpx;
+  color: #31AE61;
+}
+.score > text:last-of-type {
+  font-size: 24rpx;
+}
+
+/* 天气 */
+.weather {
+  margin: 50rpx auto;
+}
+
+/* 景点介绍 */
+.desc-detail {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, sans-serif;
+  margin-bottom: 250rpx;
+  color: #707070;
+}
+
+/*  */
+.my-button-active {
+  position: fixed;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}

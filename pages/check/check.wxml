@@ -1,0 +1,8 @@
+<!--pages/check/check.wxml-->
+<view>
+  <view class="page-list">
+    <block wx:for="{{page_list}}">
+      <view id="{{item}}" class="page-item my-button" bindtap="on_click_page_item">{{item}}</view>
+    </block>
+  </view>
+</view>

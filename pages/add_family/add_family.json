@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "邀请家庭成员"
+  "navigationBarTitleText": "邀请家庭成员",
+  "navigationBarBackgroundColor": "#5D816B"
 }

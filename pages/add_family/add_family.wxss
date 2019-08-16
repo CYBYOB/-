@@ -22,32 +22,47 @@
   margin-top: 50rpx;
 }
 .top .bg {
-  width: 600rpx;
-  height: 750rpx;
+  width: 563rpx;
+  height: 732rpx;
   border-radius: 50rpx;
 }
+
 .top .add {
   position: absolute;
-  bottom: -60rpx;
+  bottom: -45rpx;
   left: 0;
   right: 0;
   margin: 0 auto;
   width: 120rpx;
   height: 120rpx;
   border-radius: 120rpx;
+  z-index: 100；
+}
+.top .share-btn {
+  position: absolute;
+  bottom: -45rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+  background-image: url('http://www.520cyb.cn/mini/tongyou/images/add_family.png');
+  background-size:100% 100%;
 }
 
 /* 底部文案 */
 .add-text {
+  font-size: 48rpx;
   margin: 60rpx 0 20rpx;
 }
 .tip-text {
-  font-size: 22rpx;
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.5)
 }
 /* 底部跳过或完成按钮 */
-.my-button {
-  position: fixed;
-  bottom: 100rpx;
-  background-color: #5D816B;
-  border: 3rpx solid #fff;
+.next > image {
+  width: 210rpx;
+  height: 96rpx;
+  margin-top: 30rpx;
 }

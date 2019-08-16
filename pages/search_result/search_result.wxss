@@ -1,0 +1,61 @@
+/* pages/search_result/search_result.wxss */
+
+/* 页面公共样式 */
+.result-item > .tag, .desc {
+  display: inline-block;
+}
+
+
+
+.result-item {
+  width: 688rpx;
+  height: 206rpx;
+  position: relative;
+  border: 3rpx solid #E4E4E4;
+  border-radius: 25rpx;
+  box-shadow: 5rpx 5rpx 5rpx #707070;
+  margin: 25rpx auto;
+}
+.result-item > .tag {
+  position: absolute;
+  top: 15rpx;
+  left: -15rpx;
+  padding: 5rpx 10rpx;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(49, 174, 97, 1); 
+}
+.result-item > .main-img {
+  width: 206rpx;
+  height: 206rpx;
+  border-top-left-radius: 25rpx;
+  border-bottom-left-radius: 25rpx;
+}
+.result-item > .desc {
+  width: 482rpx;
+  vertical-align: top;
+}
+/* 右边的概要描述 */
+.name {
+  padding: 20rpx 25rpx 0;
+  font-size: 34rpx;
+  color: #333;
+}
+.description {
+  padding-left: 25rpx;
+  font-size: 28rpx;
+  color: #707070;
+}
+/* 价格和赞 */
+.price-like {
+  padding: 40rpx 25rpx;
+  font-size: 24rpx;
+  color: #707070;
+}
+.like {
+  display: inline-block;
+}
+.like > image {
+  width: 30rpx;
+  height: 30rpx;
+}

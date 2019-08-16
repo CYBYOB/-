@@ -1,0 +1,72 @@
+/* pages/search/search.wxss */
+
+/* 顶部搜索 */
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25rpx;
+}
+.search {
+  width: 550rpx;
+  display: flex;align-items: center;
+  border-radius: 25rpx;
+  border: 3rpx solid rgba(51, 51, 51,0.1);
+  background-color: rgba(51, 51, 51,0.05);
+}
+.search > icon {
+  padding: 0 25rpx;
+}
+.top > .confirm {
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #fff;
+  background-color: #31AE61;
+}
+
+/* 候选景点列表 */
+.page {
+  position: relative;
+}
+.scenery-list {
+  position: absolute;
+  top: 60rpx;
+  left: 0;
+  right: 0;
+  width: 700rpx;
+  margin: auto;
+  background-color: #fff;
+}
+.scenery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  10rpx 28rpx;
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 32rpx;
+  color: #666;
+}
+.scenery-item .right-arrow {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* 搜索历史记录 */
+.title {
+  color: #707070;
+}
+.history .delete {
+  width: 55rpx;
+  height: 55rpx;
+  margin-left: auto;
+}
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history-list .history-item {
+  margin: 10rpx;
+}

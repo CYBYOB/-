@@ -8,11 +8,26 @@ Page({
 
   },
 
+  // 自定义函数 开始
+  // 添加家庭成员，也就是一个 分享 功能。
+  clickAddFamily: function(e){
+    this.onShareAppMessage();
+  },
+
+  
+  navigateToIndex:  function() {
+    wx.switchTab({
+      url: '../index/index',
+    })
+  },
+
+  // 自定义函数 结束
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -60,7 +75,18 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    return {
+      title: '我在使用同游小程序，加入我吧～',
+      path: '/pages/authorization/authorization?openid='+wx.getStorageSync('openid'),
+      success: function (shareTickets) {
+        console.info(shareTickets + '成功');
+        // 转发成功
+      },
+      fail: function (res) {
+        console.log(res + '失败');
+        // 转发失败
+      }
+    }
   }
 })

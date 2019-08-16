@@ -1,0 +1,39 @@
+<!--pages/about/abouts.wxml-->
+<view>
+  <view class="top">
+    <view class="proc-intr">产品介绍</view>
+    <image src="/images/common/about_top.png"></image>
+  </view>
+
+  <!-- 底部信息 -->
+  <view class="bottom">
+    <view class="info">
+      <view class="definition">
+        <view class="big-text">产品定义</view>
+        <view class="mini-text">大学生家庭旅游共同规划的交互产品</view>
+      </view>
+      <view class="main-function">
+        <view class="big-text">核心功能</view>
+        <view class="func-list">
+          <block wx:for="{{func_list}}">
+            <view class="func-item">
+              <image src="{{item.src}}"></image>
+              <text class="mini-text">{{item.text}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+      <view class="team">
+        <view class="big-text">成员介绍</view>
+        <view class="team-list">
+          <block wx:for="{{team_list}}">
+            <view class="team-item">
+              <text class="mini-text">{{item.name}}</text>
+              <text class="mini-text">{{item.school}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,158 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view>
+  <!-- <view>背景图根据头像来的话，会有拉伸效果，很丑。所以建议大家都统一背景图。还有右上角的 更多按钮不能这么放到顶部</view> -->
+  <view class="page">
+    <view class="more">
+      <image class="more-icon" src="/images/common/more.png" bindtap="onChangeMore"></image>
+    
+      <!-- 展示关于与反馈的 -->
+      <view class="outside">
+      <view class="about-feedback" hidden="{{isMoreChecked? false : true}}">
+        <view class="top-triangle"></view>
+        <view class="about-feedback-list">
+          <block wx:for="{{about_feedback_list}}">
+            <view id="{{item.id}}" class="about-feedback-item"  bindtap="navigateToAboutFeedback">
+              <image class="icon" src="{{item.src}}"></image>
+              <view class="name">
+                {{item.name}}
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+      </view>
+
+    </view>
+
+
+    <!-- 头像、呢称等基本信息 -->
+    <view class="top-info" style="background-image: url('/images/common/add_family_bg.png');">
+      <view class="my-info">
+        <image src="{{user_info.src}}"></image>
+        <view class="nick-name">{{user_info.nick_name}}</view>
+        <view class="fan-num">粉丝：{{user_info.fan_num}}</view>
+      </view>
+
+      <!-- 底部的3个Tab -->
+      <view class="bottom">
+        <view class="tab-three-list">
+          <view id="足迹" class="{{currentTab==='足迹'? 'tab-three-item-active' : 'tab-three-item'}}"
+            bindtap="onChangeCurrentTab">足迹 2
+          </view>
+          <view id="关注" class="{{currentTab==='关注'? 'tab-three-item-active' : 'tab-three-item'}}"
+            bindtap="onChangeCurrentTab">关注 {{concern_num}}
+          </view>
+          <view id="收藏" class="{{currentTab==='收藏'? 'tab-three-item-active' : 'tab-three-item'}}"
+            bindtap="onChangeCurrentTab">收藏 {{collect_num}}
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 下面依次是 足迹、关注、收藏 -->
+      <view class="foot_print" hidden="{{currentTab==='足迹'? false : true}}">
+        <image src="/images/me/foot_print.png"></image>
+      </view>
+
+      <view class="concern" hidden="{{currentTab==='关注'? false : true}}">
+        <view class="outside">
+          <view class="family">
+            <view class="title">家庭成员</view>
+            <view class="family-list">
+              <block wx:for="{{family_list}}">
+                <view data-nick_name="{{item.nick_name}}" class="family-item" bindtap="onClickParentSrc">
+                  <image id="{{item.id}}" src="{{'http://www.520cyb.cn/mini/tongyou/'+item.src}}"></image>
+                </view>
+              </block>
+              <!-- 家庭成员最右边的加号 -->
+              <view class="family-item" bindtap="onClickAddIcon">
+                <button class="add-icon" open-type="share" ></button>
+              </view>
+            </view>
+          </view>
+
+          <view class="concern-detail">
+            <view class="title">关注的博主</view>
+            <view class="concern-list">
+              <block wx:for="{{concern_list}}">
+                <view class="concern-item">
+                  <image id="{{item.id}}" src="{{'http://www.520cyb.cn/mini/tongyou/'+item.src}}" bindtap="onClickBlogSrc"></image>
+                  <view class="name">{{item.nick_name}}</view>
+                  <!-- 关注与否来回切换 -->
+                  <view id="{{item.id}}" data-checked="{{item.checked}}" class="my-btn-tag-active concern-btn" wx:if="{{item.checked}}" bindtap="onChangeConcernChecked">已关注</view>
+                  <view id="{{item.id}}" data-checked="{{item.checked}}" class="my-btn-tag concern-btn" wx:else bindtap="onChangeConcernChecked">关注</view>
+                </view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+
+
+
+    <!-- 日历测试 -->
+    <!-- <calendar days-color="{{days_color}}" weeks-type="cn" active-type="rounded" binddayClick="dayClick"/> -->
+  </view>
+</view>
+
+
+
+<!-- <view class="container-fluid">
+    <text class="title">Demo1</text>
+    <view class="calendar-box">
+        <view class="left">
+            <view class="today">
+                <text>{{day}}</text>
+                <text class="monthStr">{{str}}</text>
+            </view>            
+        </view>
+        <view class="right">
+            <calendar header="{{false}}" cell-size="20" days-color="{{demo1_days_style}}" active-type="square" />
+        </view>
+    </view>
+    <text class="title">Demo2</text>
+    <view class="demo2">
+        <calendar cell-size="30" days-color="{{demo2_days_style}}" header-style="demo2-header" board-style="demo2-board" weeks-type="full-en" />
+    </view>
+    <text class="title">Demo3</text>
+    <view class="demo3">
+        <calendar cell-size="30" header-style="demo3-header" board-style="demo3-board" weeks-type="cn" />
+    </view>
+    <text class="title">Demo4</text>
+    <view class="demo4">
+        <calendar 
+        weeks-type="cn" 
+        cell-size="30" 
+        next="{{false}}" prev="{{false}}" show-more-days="{{true}}"
+        calendar-style="demo4-calendar" 
+        header-style="demo4-header" 
+        board-style="demo4-board" 
+        days-color="{{demo4_days_style}}" 
+        />
+    </view>
+    <text class="title">Demo5</text>
+    <view class="demo5">
+        <calendar        
+        cell-size="30" 
+        next="{{false}}" prev="{{false}}" show-more-days="{{true}}"
+        calendar-style="demo5-calendar" 
+        header-style="demo5-header" 
+        board-style="demo5-board" 
+        days-color="{{demo5_days_style}}" 
+        />
+    </view>
+    <text class="title">Demo6</text>
+    <view class="demo6">
+        <calendar       
+        weeks-type="full-en"  
+        cell-size="30" 
+        next="{{false}}" prev="{{false}}" show-more-days="{{true}}"
+        calendar-style="demo6-calendar" 
+        header-style="demo6-header" 
+        board-style="demo6-board" 
+        days-color="{{demo6_days_style}}" 
+        />
+    </view>
+</view> -->

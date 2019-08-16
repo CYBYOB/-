@@ -1,0 +1,40 @@
+<!--pages/search/search.wxml-->
+<view class="page">
+  <view class="top">
+    <view class="search">
+      <icon type="search" size="38rpx"></icon>
+      <input placeholder="搜索景点" bindinput="onChangeKeyword" bindconfirm="onConfirmSearch"></input>
+    </view>
+    <view class="confirm" bindtap="onConfirmSearch">搜索</view>
+  </view>
+
+  <!-- 候选景点列表 -->
+  <view class="scenery-list">
+    <block wx:for="{{scenery_name}}">
+      <view id="{{item.id}}" data-name="{{item.name}}" class="scenery-item border-bottom" bindtap="onClickSceneryItem">
+        <view class="name">{{item.name}}</view>
+        <image class="right-arrow" src="/images/common/right_arrow.png"></image>
+      </view>
+    </block>
+  </view>
+
+  <view class="main-content border-top">
+    <!-- 历史搜索记录 -->
+    <view class="history">
+      <view style="display: flex; align-items: center; margin-top: 10rpx">
+        <view class="title">历史搜索</view>
+        <image class="delete" src="/images/common/delete.png" bindtap="onClickDelete"></image>
+      </view>
+      <view class="history-list">
+        <block wx:for="{{history_list}}">
+          <view id="{{item}}" class="history-item my-btn-tag" bindtap="onClickHistoryItem">
+            {{item}}
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- 家人在搜，时间紧，有时间就加入 -->
+    <view>search页面候选项跟逻辑挂钩，暂时没有写</view>
+    <view>家人在搜，时间紧，有时间就加入</view>
+  </view>
+</view>

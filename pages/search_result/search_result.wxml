@@ -1,0 +1,27 @@
+<!--pages/search_result/search_result.wxml-->
+<view>
+  <view class="top">顶部搜索栏可能要进行组件化和改善，这里暂时不写</view>
+
+  <view class="result">
+    <view class="result-list">
+      <block wx:for="{{result_list}}">
+        <view id="{{item.id}}" class="result-item" bindtap="onClickSceneryItem">
+          <!-- 标签，需要定位去贴上去 -->
+          <view class="tag">{{item.tag}}</view>
+          <image class="main-img" src="{{item.src}}"></image>
+          <view class="desc">
+            <view class="name">{{item.name}}</view>
+            <view class="description">{{item.description}}</view>
+            <view class="price-like">
+              <text>{{item.price}}元起</text>
+              <view class="like fr">
+                <image src="/images/common/like.png"></image>
+                <text>{{item.like_num}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

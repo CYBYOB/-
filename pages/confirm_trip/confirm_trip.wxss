@@ -1,0 +1,67 @@
+/* pages/confirm_trip/confirm_trip.wxss */
+
+/* 页面公共样式 */
+.trip-info image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.top-date {
+  display: flex;
+  align-items: center;
+}
+.date {
+  margin-left: 95rpx;
+}
+.trip-info .title {
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 24rpx;
+  color: #767676;
+}
+
+/* 顶部背景图 */
+.bg-img {
+  width: 100%;
+  height: 600rpx;
+}
+
+
+/* 底部 */
+.bottom-fix {
+  position: fixed;
+  left: 32rpx;
+  bottom: 350rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+/* 中底部的旅程确认信息 */
+.trip-info {
+  width: 688rpx;
+  height: 300rpx;
+  /* width: 688rpx;
+  height: 496rpx; */
+  border: 3rpx solid #e4e4e4;
+  border-radius: 20rpx;
+  box-shadow: 5rpx 5rpx 5rpx #e4e4e4;
+}
+.trip-info .start, .footprint {
+  margin: 45rpx 0;
+}
+.trip-info image {
+  margin: 0 30rpx;
+}
+
+/* 底部完成按钮 */
+.my-button {
+  position: fixed;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.my-button-active {
+  position: fixed;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

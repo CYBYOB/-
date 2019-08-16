@@ -15,30 +15,55 @@
   border-bottom: 3rpx solid #E4E4E4;
 }
 
+/* 浮动样式 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
 
 /* 自定义的按钮样式，全局通用，提高代码复用率 */
 .my-button {
-  /* width: 500rpx; */
-  height: 100rpx;
-  line-height: 100rpx;
-  padding: 0 150rpx;
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   border-radius: 50rpx;
+  text-align: center;
+  font-size:36rpx;
+  color: #31AE61;
+  border: 3rpx solid #31AE61;
+}
+.my-button-active {
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 50rpx;
+  text-align: center;
   font-size:36rpx;
   color: #F9FEF9;
   background-color:#31AE61;
 }
+
 .my-btn-tag {
-  height: 70rpx;
-  line-height: 70rpx;
-  padding: 0 40rpx;
-  border: 3rpx solid #E4E4E4;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 35rpx;
+  border: 3rpx solid rgba(51, 51, 51, 0.5);
   border-radius: 40rpx; 
   /* 未选中和选中的2个颜色不一样 */
-  color: #333333;
+  color: rgba(51, 51, 51, 0.5);
   background-color:#fff;  
 }
-/* 辅助性的文字，字小颜色淡 */
-.mini-text {
-  font-size: 32rpx;
-  color: #666;
+/* 标签选中状态 */
+.my-btn-tag-active {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 35rpx;
+  border: 3rpx solid rgba(49, 174, 97, 1);
+  border-radius: 40rpx; 
+  /* 未选中和选中的2个颜色不一样 */
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(49, 174, 97, 1);  
 }

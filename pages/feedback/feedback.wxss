@@ -1,0 +1,66 @@
+/* pages/feedback/feedback.wxss */
+
+/* 页面公共样式 */
+.feedback, .phone {
+  width: 688rpx;
+  border: 3rpx solid #707070;
+  border-radius: 20rpx;
+  box-shadow: 5rpx 5rpx 5rpx #707070; 
+}
+
+/* 上面的反馈所有内容 */
+.feedback {
+  height: 335rpx;
+  margin: 40rpx auto 25rpx;
+  /* background-color: red; */
+}
+.inside {
+  position: relative;
+  padding: 25rpx;
+}
+
+/* inside的顶部 */
+.top > input {
+  height: 178rpx;
+}
+/* inside的底部 */
+.bottom {
+  display: flex;
+  align-items: flex-end;
+}
+.bottom > image {
+  width: 110rpx;
+  height: 110rpx;
+  padding-right: 25rpx;
+}
+.bottom > input {
+  flex: 1;
+}
+
+/* 电话 */
+.phone {
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  margin: 25rpx auto;
+  color: #707070;
+}
+.phone > text {
+  padding: 0 25rpx;
+  border-right: 3rpx solid rgba(51, 51, 51, 0.5);
+}
+.phone > input {
+  height: 96rpx;
+  flex: 1;
+  padding-left: 25rpx;
+}
+
+/* 提交按钮 */
+.my-button {
+  margin: 0 auto;
+  text-align: center;
+}
+.my-button-active {
+  margin: 0 auto;
+  text-align: center;
+}

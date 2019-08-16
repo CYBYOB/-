@@ -1,0 +1,25 @@
+<!--pages/confirm_trip/confirm_trip.wxml-->
+<view>
+  <view class="page">
+    <image class="bg-img" src="/images/test/1.png"></image>
+    <view class="bottom-fix">
+      <view class="trip-info">
+        <view class="start">
+          <view class="top-date">
+            <image src="/images/confirm_trip/start.png"></image>
+            <text class="title">出发日期</text>
+          </view>
+          <view class="date">{{date.start}}</view>
+        </view>
+        <view class="end">
+          <view class="top-date">
+            <image src="/images/confirm_trip/end.png"></image>
+            <text class="title">返回日期</text>
+          </view>
+          <view class="date">{{date.end}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="my-button-active">完成</view>
+  </view>
+</view>
